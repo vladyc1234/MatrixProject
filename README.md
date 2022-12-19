@@ -9,5 +9,30 @@ The process of building this game was pretty straightforward:
   1. I created a dot on the matrix for the player to move around
   2. I added a random food generation mechanic
   3. I added a score and time mechanic to go with the food collecting 
-  4. I designed the traps and put them on the matrix
-  5. I created 3 seperate difficulties **Easy**/**Normal**/**Hard** and added some new harder traps for the last one
+  4. I designed and coded the LCD menu that comes with the game
+  5. I designed the traps and put them on the matrix
+  6. I created 3 separate difficulties **Easy**/**Normal**/**Hard** and added some new, more challenging traps for the last one
+ 
+ ## Game Description
+ 
+In the game Trap-Divers, you play as a little adventurer that explores ancient caves in search of rare gems. You must evade traps and falling debris while rushing through the cave in pursuit of your precious gemstones!
+
+## Game Instructions
+
+### Game:
+  
+    * joystick UP the player moves UP
+    * joystick DOWN the player moves DOWN
+    * joystick RIGHT the player moves RIGHT
+    * joystick LEFT the player moves LEFT
+  
+### Menu:
+  
+    * to scroll UP/DOWN move the joystick UP/DOWN
+    * to select from menu move the joystick RIGHT
+    * to leave the selected menu move the joystick LEFT
+    * to save a setting or confirm a selection press the joystick BUTTON
+    * separate for the INSTRUCTION and ABOUT menus you scroll LEFT/RIGHT and leave them by pressing the joystick
+
+
+
