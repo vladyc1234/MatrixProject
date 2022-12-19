@@ -34,5 +34,19 @@ In the game Trap-Divers, you play as a little adventurer that explores ancient c
     * to save a setting or confirm a selection press the joystick BUTTON
     * separate for the INSTRUCTION and ABOUT menus you scroll LEFT/RIGHT and leave them by pressing the joystick
 
+## Hardware
 
+### Components:
+
+  * 1x Breadboard medium
+  * 1x Breadboard small
+  * 1x Arduino UNO board
+  * 1x Passive Buzzer
+  * 1x LCD1602
+  * 1x 8x8 LED Matrix
+  * 1x Matrix Driver
+  * 1x Joystick
+  * 1x 200K Ohm Resistor
+  * 1x 100 Ohm Resistor
+  * ~51x Wires 
 
