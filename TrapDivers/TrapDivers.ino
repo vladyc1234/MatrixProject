@@ -73,7 +73,7 @@ byte newFoodPosY = 0;
 byte xLastPos = 0;
 byte yLastPos = 0;
 bool eaten = 0;
-const byte moveInterval = 450;
+byte moveInterval = 450;
 unsigned long lastMoved = 0;
 unsigned long blink = 0;
 bool blinked = 0;
@@ -511,6 +511,12 @@ void loop() {
       delay(1500);
       lcd.clear();
       lc.clearDisplay(0);
+      if (score > highscores[5].score) {
+        lcd.setCursor(0, 0);
+        lcd.write(" NEW HIGHSCORE! ");
+        delay(1000);
+        lcd.clear();
+      }
       gameOver = 0;
       startTimer = 0;
     }
@@ -594,6 +600,8 @@ void displayStaticTrap(uint64_t image) {
         matrixTrap[i][j] = !matrix[i][j];
       }
     }
+    matrixTrap[xPos][yPos] = 1;
+    matrixTrap[newFoodPosY][newFoodPosY] = 1;
     trapBlinkStage++;
     matrixChanged = true;
   }
@@ -870,7 +878,7 @@ void updatePositions() {
   // if the new spot is a trap tile the player dies/ if the new pos is a food tile the score increases  
   if (xPos != xLastPos || yPos != yLastPos) {
     matrixChanged = true;
-    if (matrixTrap[xPos][yPos] == 0 && trapActive == 1) {
+    if (matrixTrap[xPos][yPos] == 0 && trapActive == 1 && (xPos != newFoodPosX && yPos != newFoodPosY)) {
       gameState = 2;
       gameOver = 1;
       matrix[xLastPos][yLastPos] = 0;
@@ -1339,14 +1347,17 @@ void pickDifficulty() {
     if (difficultyChoice == 1) {
       addScore = 10;
       addTime = 3000;
+      moveInterval = 400;
       trapBlink = 1;
     } else if (difficultyChoice == 2) {
       addScore = 15;
       addTime = 2500;
+      moveInterval = 450;
       trapBlink = 0.80;
     } else if (difficultyChoice == 3) {
       addScore = 20;
       addTime = 2200;
+      moveInterval = 500;
       trapBlink = 0.65;
     }
     lc.clearDisplay(0);
