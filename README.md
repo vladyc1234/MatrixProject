@@ -52,8 +52,7 @@ In the game Trap-Divers, you play as a little adventurer that explores ancient c
 
 ## Picture
 
+![aee79696-b390-4750-a981-4da8039b0fd0](https://user-images.githubusercontent.com/73032808/209374056-7223b603-30f2-4a6b-8d41-fcb1fc80e91c.jpg)
 
-![ff7e4c00-6692-4ef6-8825-d03ddce9b80e](https://user-images.githubusercontent.com/73032808/208513119-c6e1c55a-71ef-46c0-a73a-94c24110b058.jpg)
-
-### Video: https://youtu.be/B6QjQjlKKJg
+### Video: https://youtu.be/OFv2kI2Qrmc
 
